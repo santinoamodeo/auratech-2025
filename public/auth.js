@@ -1,5 +1,5 @@
 // auth.js
-import { auth } from './firebase-config.js';
+import { auth } from './firebase-config';
 import { signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
 
 export function setupLogin(formSelector) {
@@ -21,7 +21,7 @@ export function setupLogin(formSelector) {
     }
     try {
       await signInWithEmailAndPassword(auth, email, pass);
-      window.location.replace('dashboard.html');
+        window.location.replace('/dashboard.html');
     } catch (err) {
       if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password') {
         alertBox.textContent = 'Correo o contraseña incorrectos.';

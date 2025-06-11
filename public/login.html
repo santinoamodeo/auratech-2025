@@ -1,3 +1,4 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,17 +9,14 @@
   <script type="module" src="firebase-config.js" defer></script>
   <script type="module" src="auth.js" defer></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
   <form id="login-form" class="bg-white p-8 rounded shadow-md w-full max-w-md">
     <h2 class="text-2xl font-bold mb-6 text-center">Iniciar Sesión</h2>
     <label class="block mb-2">Correo</label>
-    <input type="email" name="email" required class="w-full p-2 border rounded mb-4" />
+    <input type="email" name="email" required class="w-full p-3 border rounded mb-4" />
     <label class="block mb-2">Contraseña</label>
-    <input type="password" name="password" required class="w-full p-2 border rounded mb-4" />
+    <input type="password" name="password" required class="w-full p-3 border rounded mb-6" />
     <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Ingresar</button>
   </form>
- 
-  <script type="module" src="./auth.js"></script>
 </body>
 </html>

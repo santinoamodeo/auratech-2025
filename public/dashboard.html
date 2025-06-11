@@ -1,3 +1,4 @@
+<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +9,7 @@
   <script type="module" src="firebase-config.js" defer></script>
   <script type="module" src="dashboard.js" defer></script>
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
+<body class="bg-gray-50 flex flex-col min-h-screen px-4">
 
   <nav class="bg-white shadow p-4 flex justify-between items-center">
     <div class="text-xl font-bold text-blue-600">Auratech</div>
@@ -17,7 +18,7 @@
 
   <main class="container mx-auto p-6 flex-grow">
     <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
-    <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
   </main>
 
   <footer class="bg-white shadow-inner text-center py-4 text-gray-600">

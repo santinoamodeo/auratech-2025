@@ -1,28 +1,74 @@
-<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dashboard - Auratech</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./logo-modified.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script type="module" src="firebase-config.js" defer></script>
   <script type="module" src="dashboard.js" defer></script>
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen px-4">
+<body class="bg-gray-100 min-h-screen flex flex-col font-sans">
 
-  <nav class="bg-white shadow p-4 flex justify-between items-center">
-    <div class="text-xl font-bold text-blue-600">Auratech</div>
-    <button id="logout-btn" class="text-red-600 hover:underline">Cerrar Sesión</button>
-  </nav>
+  <!-- NAVBAR -->
+<nav class="bg-white shadow p-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <img src="./logo-modified.png" alt="Logo Auratech" class="h-10 w-auto" />
+    <div class="text-xl font-bold text-blue-700">
+      <a href="./index.html">Auratech</a>
+    </div>
+  </div>
+</nav>
 
-  <main class="container mx-auto p-6 flex-grow">
-    <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
-    <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+
+  <!-- MAIN -->
+  <main class="flex-grow container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">Dashboard</h1>
+
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <a href="./calculator.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fas fa-calculator text-4xl text-blue-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">Calculadora de Resistencia</h2>
+      </a>
+
+      <a href="./capacitaciones.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fas fa-chalkboard-teacher text-4xl text-green-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">Capacitaciones</h2>
+      </a>
+
+      <a href="./ordenes.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fas fa-clipboard-list text-4xl text-orange-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">OT (Ordenes de Trabajo)</h2>
+      </a>
+
+      <a href="ats.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fa-solid fa-shield-halved text-4xl text-red-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">ATS (Análisis de Trabajo Seguro)</h2>
+      </a>
+
+      <a href="pta.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fa-solid fa-stairs text-4xl text-purple-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">PTA (Permiso de Trabajo en Altura)</h2>
+      </a>
+
+      <a href="certificaciones.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fa-solid fa-certificate text-4xl text-yellow-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">Certificaciones</h2>
+      </a>
+
+      <a href="seg_higen.html" target="_blank" class="bg-white rounded-xl shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 p-6 flex flex-col items-center text-center duration-300">
+        <i class="fa-solid fa-helmet-safety text-4xl text-gray-500 mb-4"></i>
+        <h2 class="font-semibold text-gray-800">Seguridad e Higene</h2>
+      </a>
+    </div>
   </main>
 
-  <footer class="bg-white shadow-inner text-center py-4 text-gray-600">
+  <!-- FOOTER -->
+  <footer class="bg-white shadow-inner text-center py-4 text-gray-500 text-sm">
     ©2025 Auratech | Olimpiadas INET
   </footer>
+
 </body>
 </html>

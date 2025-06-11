@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Auratech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script type="module" src="firebase-config.js" defer></script>
+  <script type="module" src="dashboard.js" defer></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-blue-600">Auratech</div>
+    <button id="logout-btn" class="text-red-600 hover:underline">Cerrar Sesión</button>
+  </nav>
+
+  <main class="container mx-auto p-6 flex-grow">
+    <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
+    <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <footer class="bg-white shadow-inner text-center py-4 text-gray-600">
+    ©2025 Auratech | Olimpiadas INET
+  </footer>
+</body>
+</html>

@@ -20,10 +20,10 @@ Este sitio web fue desarrollado como parte del proyecto para presentar el equipo
 ## 👥 Nuestro Equipo
 
 - **Santino Emiliano Amodeo**  
-  *Ingeniero Industrial*
+  *Técnico en Electrónica*
 
 - **Renzo Nicolás Lombardi**  
-  *Ingeniero en Electrónica*
+  *Técnico en Electrónica*
 
 - **Dardo Agustin Sosa**  
   *Técnico en Electrónica*

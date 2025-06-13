@@ -111,7 +111,7 @@ function limpiarHistorial() {
 
 window.limpiarHistorial = limpiarHistorial;
 
-// Exportar PDF con logo y "AURATECH"
+// Exportar PDF con logo y "AURATECH S.A."
 async function exportarPDF() {
   if (historial.length === 0) {
     alert("No hay datos en el historial para exportar");
